@@ -53,11 +53,11 @@ void vendor_load_properties()
 
     property_get("ro.boot.mid", bootmid);
 
-    if (strstr(bootmid, "0PL220000")) {
+    if (strstr(bootmid, "0PL210000")) {
         /* b3uhl (b3tuhl) */
-        property_set("ro.build.product", "htc_b3tuhl");
-        property_set("ro.product.device", "htc_b3tuhl");
-        property_set("ro.product.model", "HTC_B830x");
+        property_set("ro.build.product", "htc_b3uhl");
+        property_set("ro.product.device", "htc_b3uhl");
+        property_set("ro.product.model", "HTV31");
         property_set("ro.telephony.default_network", "9");
         property_set("telephony.lteOnGsmDevice", "1");
     }
